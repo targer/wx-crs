@@ -1,0 +1,291 @@
+/*CSS源代码*/
+body {
+    background: #229ffd url("http://img.jdzj.com/UserDocument/2014a/ailida2014/Picture/2014311171630.jpg") no-repeat;
+}
+
+#container:before {
+    content: "";
+    width: 300px;
+    height: 250px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    margin: -125px 0 0 -150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: login_animation 1s;
+    -moz-animation: login_animation 1s;
+    -webkit-animation: login_animation 1s;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(radial, 50% 50%, 40, 50% 50%, 2500, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 1))),
+    -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 250, from(rgba(150, 150, 150, 0.5)), to(rgba(150, 150, 22, 0)));
+    　　background-color: #EE1D25;
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+.loginClose {
+    position: absolute;
+    margin-top: -45px;
+    border-radius: 15px;
+
+    margin-left: 270px;
+    font: 28px Arial, "微软雅黑";
+}
+
+.loginClose:hover {
+    animation: close_animation 1s;
+    -moz-animation: close_animation 1s;
+    -webkit-animation: close_animation 1s;
+    color: red;
+    cursor: pointer;
+}
+
+@-moz-keyframes close_animation {
+    0% {
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes close_animation {
+    0% {
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes close_animation {
+    0% {
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#inuptPwd:focus ~ label:before {
+    margin-top: -40px;
+    margin-left: 230px;
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 26px;
+    color: #ccc;
+    font: 13px Arial, "微软雅黑";
+    content: '密码';
+    transition: all 0.3s ease;
+    animation: user_animation 1s;
+    -moz-animation: user_animation 1s;
+    -webkit-animation: user_animation 1s;
+}
+
+#inuptUser:focus ~ label:before {
+    margin-top: -90px;
+    margin-left: 220px;
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 20px;
+    color: #ddd;
+    font: 13px Arial, "微软雅黑";
+    content: '用户名';
+    transition: all 0.3s ease;
+    animation: user_animation 1s;
+    -moz-animation: user_animation 1s;
+    -webkit-animation: user_animation 1s;
+}
+
+@-moz-keyframes user_animation {
+    0% {
+        margin-left: 30px;
+    }
+}
+
+@-webkit-keyframes user_animation {
+    0% {
+        margin-left: 30px;
+    }
+}
+
+@keyframes user_animation {
+    0% {
+        margin-left: 30px;
+    }
+}
+
+.login {
+    width: 300px;
+    height: 250px;
+    margin: -125px 0 0 -150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: login_animation 1s;
+    -moz-animation: login_animation 1s;
+    -webkit-animation: login_animation 1s;
+}
+
+.login input {
+    outline: none;
+    width: 230px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    height: 30px;
+    text-indent: 5px;
+    display: block;
+    border-radius: 4px;
+    margin: 15px auto;
+    transition: all 1s ease;
+}
+
+@-moz-keyframes login_animation {
+    0% {
+        top: 100%;
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes login_animation {
+    0% {
+        top: 100%;
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes login_animation {
+    0% {
+        top: 100%;
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.login input:focus {
+    border: 1px solid #229ffd;
+}
+
+.login input[type="submit"] {
+    color: #555;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+    width: 230px;
+    height: 30px;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #0d7bc4;
+    background: -webkit-linear-gradient(top, #229ffd, #1f86d4);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.05s;
+    transition-duration: 0.05s;
+}
+
+.login input[type="submit"]:active {
+    appearance: none;
+    text-decoration: none;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) inset;
+}
+
+.login:before {
+    width: 300px;
+    display: block;
+    content: "会员登录";
+    font: 21px Arial, "微软雅黑";
+    color: #222;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login:after {
+    top: 210px;
+    content: " ";
+    width: 300px;
+    height: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+}
+
+.lblc {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background: #42d842;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lblc:after {
+    position: absolute;
+    left: 20px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+
+.lblc:active:after {
+    transform: scale(2, 0.8);
+}
+
+.cbx:checked ~ label:after {
+    left: -2px;
+    background: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.lbl:after {
+    position: absolute;
+    left: 278px;
+    top: 0px;
+    display: block;
+    content: '×';
+    font: 28px Arial, "微软雅黑";
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.lbl:hover:after {
+    animation: close_animation 1s;
+    -moz-animation: close_animation 1s;
+    -webkit-animation: close_animation 1s;
+    color: red;
+    cursor: pointer;
+}
+
+.cbx:checked ~ label {
+    background: #ddd;
+}
+
+.cbx:checked ~ div {
+
+    transition: all 0.5s ease;
+    display: none;
+
+}

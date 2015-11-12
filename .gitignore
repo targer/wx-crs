@@ -1,3 +1,6 @@
+/CRS-ws-lucene/indexes
+/CRS-ws-lucene/data1
+/CRS-ws-lucene/data
 *.class
 *.txt
 filerepository

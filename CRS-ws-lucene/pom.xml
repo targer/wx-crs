@@ -11,36 +11,29 @@
     </parent>
 
     <groupId>org.open</groupId>
-    <artifactId>CRS-web</artifactId>
+    <artifactId>CRS-ws-lucene</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>CRS-web Maven Webapp</name>
+    <name>CRS-ws-lucene Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
         <!--第三方依赖-->
-        <!--<dependency>-->
-            <!--<groupId>org.open</groupId>-->
-            <!--<artifactId>CRS-service</artifactId>-->
-            <!--<version>1.0-SNAPSHOT</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.open</groupId>
+            <artifactId>CRS-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-ws</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>3.3.5</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -48,15 +41,10 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>1.2.2.RELEASE</version>
-        </dependency>
     </dependencies>
 
     <build>
-        <finalName>CRS-web</finalName>
+        <finalName>CRS-ws-lucene</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
