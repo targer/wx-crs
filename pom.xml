@@ -42,5 +42,6 @@
         <module>CRS-ws</module>
     <module>CRS-cmd-async</module>
     <module>CRS-ws-lucene</module>
+    <module>CRS-cmd-tij</module>
   </modules>
 </project>
